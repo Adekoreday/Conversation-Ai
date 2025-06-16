@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import chalk from 'chalk';
 import { contextAwareChat } from './context-aware-chat/index.js';
 import readline from 'readline';
 
@@ -14,7 +15,7 @@ const askQuestion = (query: string): Promise<string> => {
 };
 
 const main = async () => {
-  console.log("Hello! I'm a simple AI assistant. Ask me anything. Type 'exit' to quit.");
+  console.log(chalk.yellow("Hello! I'm a simple AI assistant. Ask me anything. Type 'exit' to quit."));
   const threadId = uuidv4();
 
   while (true) {
@@ -27,7 +28,7 @@ const main = async () => {
 
     try {
       const response = await contextAwareChat(question, threadId);
-      console.log("AI Assistant says:", response.content);
+      console.log(chalk.green(`AI Assistant says: ${response.content}`));
     } catch (err) {
       console.error("Oops, something went wrong:", err);
     }
