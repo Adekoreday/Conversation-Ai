@@ -1,6 +1,5 @@
 # Conversation AI
-<img width="771" alt="Screenshot 2025-06-16 at 01 58 28" src="https://github.com/user-attachments/assets/a24a7846-6f9b-420d-8507-cc81af52d8cc" />
-
+<img width="777" alt="Screenshot 2025-06-16 at 02 04 33" src="https://github.com/user-attachments/assets/dc61d52a-b19b-4004-8cb4-61f1f5ba724a" />
 
 This project contains a simple and helpful conversational AI assistant.
 That can retain context of chat within a specific context window and converse in your language of choice
